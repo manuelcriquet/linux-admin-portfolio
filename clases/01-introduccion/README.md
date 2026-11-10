@@ -167,25 +167,25 @@ GNU GENERAL PUBLIC LICENSE
 ```
 
 ## Ejercicios
-1-Caso: «un amigo dice que Linux es un sistema operativo, ¿qué le contestás?» (GNU, kernel y distribución).
-2-Explicar con tus palabras la analogía del restaurante, la tuya del mozo o una nueva.
+-1 Caso: «un amigo dice que Linux es un sistema operativo, ¿qué le contestás?» (GNU, kernel y distribución).
+-2 Explicar con tus palabras la analogía del restaurante, la tuya del mozo o una nueva.
 
 Respuestas:
 
-1-En parte se utiliza mucho en conversaciones no formales que Linux es un sistema operativo, pero la verdad es que el sistema operativo completo es GNU/LINUX, y linux es el kernel del SO
-2-La analogía del restaurante se base en: vos tenes el que abre el restaurante, el que inicia todo el cual sería en nuestro caso el PID1, luego de eso tenes un recepcionista que te dice donde ir y sentarte que en nuestro caso es el Display Manager, a su vez la mesa donde te sentas y te atienden es el Xorg/wayland (el que te atiende) y vos como cliente le pides las cosas que queres
+-1 En parte se utiliza mucho en conversaciones no formales que Linux es un sistema operativo, pero la verdad es que el sistema operativo completo es GNU/LINUX, y linux es el kernel del SO
+-2 La analogía del restaurante se base en: vos tenes el que abre el restaurante, el que inicia todo el cual sería en nuestro caso el PID1, luego de eso tenes un recepcionista que te dice donde ir y sentarte que en nuestro caso es el Display Manager, a su vez la mesa donde te sentas y te atienden es el Xorg/wayland (el que te atiende) y vos como cliente le pides las cosas que queres
 
 ## Autoevaluación
-1- ¿Por qué GNU no es Unix?
-2- ¿Qué aporta GNU y qué aporta Linux? 
-3- ¿Qué libertad exige el código fuente?
-4- ¿Qué diferencia hay entre kernel y distribución?
-5- ¿Quién levanta el display manager y quién levanta Xorg?
-6- Window manager, composite manager y toolkit: ¿qué administra cada uno?
-7- Verdadero o falso: «el kernel lanza Xorg directamente».
-8- ¿Qué es un cliente del servidor gráfico?
-9- ¿Qué es el PID 1?
-10- ¿Cómo evitan los estándares un mercado cautivo?
+-1 ¿Por qué GNU no es Unix?
+-2 ¿Qué aporta GNU y qué aporta Linux? 
+-3 ¿Qué libertad exige el código fuente?
+-4 ¿Qué diferencia hay entre kernel y distribución?
+-5 ¿Quién levanta el display manager y quién levanta Xorg?
+-6 Window manager, composite manager y toolkit: ¿qué administra cada uno?
+-7 Verdadero o falso: «el kernel lanza Xorg directamente».
+-8 ¿Qué es un cliente del servidor gráfico?
+-9 ¿Qué es el PID 1?
+-10 ¿Cómo evitan los estándares un mercado cautivo?
 
 RESPUESTAS
 1: GNU buscaba imitar el funcionamiento de Unix y un SO 100% libre, lo cual unix no era, pero este fue desarrollado completamente desde 0. Por eso no es Unix
