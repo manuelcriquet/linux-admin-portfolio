@@ -172,11 +172,11 @@ GNU GENERAL PUBLIC LICENSE
 
 ### Respuestas:
 
-** 1 ** 
+**1** 
 
 En parte se utiliza mucho en conversaciones no formales que Linux es un sistema operativo, pero la verdad es que el sistema operativo completo es GNU/LINUX, y linux es el kernel del SO
 
-** 2 ** 
+**2** 
 La analogía del restaurante se base en: vos tenes el que abre el restaurante, el que inicia todo el cual sería en nuestro caso el PID1, luego de eso tenes un recepcionista que te dice donde ir y sentarte que en nuestro caso es el Display Manager, a su vez la mesa donde te sentas y te atienden es el Xorg/wayland (el que te atiende) y vos como cliente le pides las cosas que queres
 
 ## Autoevaluación
@@ -192,41 +192,41 @@ La analogía del restaurante se base en: vos tenes el que abre el restaurante, e
 10. ¿Cómo evitan los estándares un mercado cautivo?
 
 ### Respuestas
-** 1 ** 
+**1** 
 GNU buscaba imitar el funcionamiento de Unix y un SO 100% libre, lo cual unix no era, pero este fue desarrollado completamente desde 0. Por eso no es Unix
 
-** 2 **
- GNU aporta casi todo el SO menos el kernel, las aplicaciones, entorno de escritorio, etc. En cuanto a Linux aportó el kernel para el SO el cual era un gran problema del desarrollo de GNU ya que tenían todo menos un kernel, por eso se dice GNU/LINUX
+**2**
+GNU aporta casi todo el SO menos el kernel, las aplicaciones, entorno de escritorio, etc. En cuanto a Linux aportó el kernel para el SO el cual era un gran problema del desarrollo de GNU ya que tenían todo menos un kernel, por eso se dice GNU/LINUX
 
-** 3 **
+**3**
 El código fuente es necesario para poder estudiar y modificar el SO y puedes compartir estas mejoras con la comunidad, en caso de no tener acceso al código fuente no se podría estudiar ni modificar y la comunidad no podría aprender ni aportar su granito de arena
 
 ** 4 **
 El kernel es el núcleo del SO, el cual facilita que las aplicaciones no se preocupen por hacer manejos a bajo nivel y hablar con el hardware, ya que el núcleo del kernel es el que lo hace, mientras que una distribución es un conjunto de cosas, no solo un kernel: esta compuesto por un objetivo, un kernel, un conjunto de aplicaciones determinadas, drivers y modulos, un instalador, un detector de hardware, un nombre y un grupo de mantenedores
 
-** 5 ** 
+**5** 
 Al display manager lo levanta el PID 1, mientras que a xorg lo levanta el display manage
 
-** 6 ** 
+**6** 
 El window manager administra lo que es la relación entre la ventana y el entorno de escritorio, como se minimiza, su tamaño, cierre, redimensión, etc. Mientras que el composite manager está relacionado con el renderizado de la ventana, animaciones, sombras, utiliza aceleración de hardware, etc. Y las toolkits son librerías que proporcionan el contenido de la ventana, botones, menús, barra de desplazamiento, etc.
 
-** 7 ** 
+**7** 
 Falso: el display manager es un programa común que lanza systemd, y lo único que lanza el kernel es el PID 1.
 
-** 8 ** 
+**8** 
 Un cliente del servidor grafico puede ser cualquier aplicacion que requiera sus servicios, un ejemplo podría ser firefox que en X momento necesita abrir una pestaña, entonces solicita los servicios del servidor gráfico y le dice quiero una ventana de x tamaño con x cosas, etc y el servidor le da los servicios
 
-** 9 ** 
+**9** 
 Es el primer proceso que se ejecuta y el encargado de levantar todos los servicios
 
-** 10 ** 
+**10** 
 Los evitan ya que hace posible que toda una comunidad aporte su grano de arena y pueda colaborar, es como que todos hablen el mismo idioma, sin un estándar cada uno desarrolla su aplicación/herramienta/sistema y para poder solapar sus funcionalidades con otras tendríamos que aprender su “idioma” y con las millones de aplicaciones que hay seria todo muy difícil, el estándar establece un idioma por el cual todos entienden y permite que se comuniquen fácilmente y aplicaciones colaboren entre todas sin necesidad de reprogramar cosas que ya otra persona realizó. 
 
 
 
 ## Errores y correcciones
-** 8  ** 
+**8** 
 Faltó que display manager, window manager, composite manager, toolkits y entorno de escritorio también son clientes del servidor gráfico.
 
-** 10 ** 
+**10** 
 mercado cautivo: el usuario queda atado a un proveedor porque nada de otros es compatible.
