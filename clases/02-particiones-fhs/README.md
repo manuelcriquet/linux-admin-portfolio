@@ -75,7 +75,7 @@ lsblk -f
 df -hT
 ```
 
-![lsblk en la VM](img/evidencia-vm-lsblk.png)
+![lsblk en la VM](img/evidencia-vm-lsblk.jpg)
 
 **Qué demuestra:** vda1 es la raíz (ext4), vda2 es la partición extendida, y vda5 (swap) y vda6 (/home) son particiones lógicas. El segundo disco, vdb, tiene vdb1 en FAT32, vdb2 en ext4 montada en /var/logsadicionale y vdb3 sin formato.
 
@@ -85,7 +85,7 @@ df -hT
 sudo fdisk -l
 ```
 
-![fdisk en la VM](img/evidencia-vm-fdisk.png)
+![fdisk en la VM](img/evidencia-vm-fdisk.jpg)
 
 **Qué demuestra:** el disco `/dev/vda` es de 20 GiB y el tipo de etiqueta es `dos`, es decir MBR.
 
@@ -95,7 +95,7 @@ sudo fdisk -l
 ls /sys/firmware/efi
 ```
 
-![Sin carpeta efi en la VM](img/evidencia-vm-efi.png)
+![Sin carpeta efi en la VM](img/evidencia-vm-efi.jpg)
 
 **Qué demuestra:** la carpeta no existe, así que la VM arrancó en modo BIOS y no en UEFI. En a segunda imagen la carpeta existe (con `efivars`, `mok-variables` y otros), así que la PC arrancó en UEFI.
 
@@ -105,7 +105,7 @@ ls /sys/firmware/efi
 ls -ld /bin /sbin /lib
 ```
 
-![Enlaces en la VM](img/evidencia-vm-enlaces.png)
+![Enlaces en la VM](img/evidencia-vm-enlaces.jpg)
 
 **Qué demuestra:** `/bin` apunta a `usr/bin` y `/sbin` a `usr/sbin`. **TODO: agregar `/lib` a la captura.**
 
@@ -116,7 +116,7 @@ swapon --show
 free -h
 ```
 
-![Swap en la VM](img/evidencia-vm-swap.png)
+![Swap en la VM](img/evidencia-vm-swap.jpg)
 
 **Qué demuestra:** la swap es la partición `/dev/vda5` de 1,1 G y no está en uso (0 B); la VM tiene 3,7 Gi de RAM, con 329 Mi usados.
 
@@ -137,7 +137,7 @@ sha256sum -c hash.txt
 sha256sum -c hash2.txt
 ```
 
-![Ejercicio de hash](img/ejercicio-hash.png)
+![Ejercicio de hash](img/ejercicio-hash.jpg)
 
 
 **Conclusión:** un cambio mínimo en el contenido produce un hash completamente distinto. `sha256sum -c hash.txt` informó que la suma no coincide, y `sha256sum -c hash2.txt` informó que sí coincide. Así se detecta que un archivo cambió o se corrompió.
